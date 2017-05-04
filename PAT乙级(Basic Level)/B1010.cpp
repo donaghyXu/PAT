@@ -1,3 +1,4 @@
+//pat指数非负 
 #include <cstdio>
 int main() {
 	int a[1005] = {0};
@@ -28,3 +29,23 @@ int main() {
 	}
 	return 0;
 } 
+
+/* 
+//牛客网指数有负数 
+#include <cstdio>
+int main(void){
+	int a[1005][2]={0}, cnt = 0;
+	
+	//读入多项式，并统计个数 
+	while(scanf("%d %d", &a[cnt][0], &a[cnt][1]) != EOF) {
+		cnt++;
+	}
+	
+	for(int i = 0; i < cnt; i++){
+		if(a[i][1] != 0) printf("%d %d", a[i][0] * a[i][1], a[i][1] - 1);	//打印求导后的多项式 
+		if((i != cnt - 1) && (a[i+1][1] != 0)) printf(" ");	//输出空格 
+		if(cnt == 1 && a[i][1]==0) printf("0 0");	//指数和系数都是0,表示为0 0
+	}
+	return 0;
+}
+*/
