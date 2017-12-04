@@ -14,7 +14,7 @@ int main() {
 	} 
 	if(sum == 0) printf("ling");	//如果和为0，直接输出 
 	else {
-		while(sum != 0) {		//将sum各个位数上的数学存在res数组 
+		while(sum != 0) {		//将sum各个位数上的数字存在res数组 
 			res[cnt] = sum % 10;
 			sum /= 10;
 			cnt++;
